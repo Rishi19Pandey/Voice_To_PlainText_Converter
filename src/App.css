@@ -1,0 +1,138 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+.mainContainer {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(60deg , #010758 , #0b5c81);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text1{
+  color: #e7a4a4;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: -50px;
+  margin-bottom: 20px;
+}
+
+.text2{
+  margin-bottom: 20px;
+}
+.textArea1{
+  width: 60vw;
+  min-height: 30vw;
+  max-height: 50vw;
+  background: #403d84;
+  color: #fff;
+  font-size: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  resize: both;
+  overflow: auto;
+  /* word-break: break-all; */
+  margin-bottom: 30px;
+  word-wrap:break-word;
+}
+
+.span1{
+  color: #ff2963;
+}
+
+.span2{
+  color: #f3efec;
+}
+
+.buttons{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  align-items: center;
+  width: 1000px;
+  gap: 30px;
+}
+
+.button1 {
+  background : #d82656;
+  color: #fff;
+  font-size: 13px;
+  padding: 10px 15px;
+  margin: 8px 4px ;
+  border-radius: 35px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.button2{
+  background : #d82656;
+  color: #fff;
+  font-size: 13px;
+  padding: 10px 55px;
+  margin: 8px 4px ;
+  border-radius: 35px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media Query for Responsiveness */
+
+@media(max-width : 365px){
+  .mainContainer{
+    background: red;
+  }
+  .Buttons{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+  }
+  .textArea1{
+    resize: both;
+    overflow: auto;
+  }
+}
